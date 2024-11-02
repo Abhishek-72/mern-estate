@@ -12,9 +12,9 @@ export default function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
         <Route element={<PrivateRoute />}>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
           <Route path="/profile" element={<Profile />}></Route>
           <Route path="/create-listing" element={<CreateListing />}></Route>
         </Route>
