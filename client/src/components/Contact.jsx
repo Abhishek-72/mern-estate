@@ -39,8 +39,8 @@ export default function Contact({ listing }) {
             className="w-full border p-3 rounded-lg"
           ></textarea>
           <Link
-            to={`mailto:${landlord.email}?subject=Regarding ${listing.name}&body=${message}`}
-            className="bg-slate-900 text-white text-center p-3  uppercase rounded-lg hover:opacity-95"
+            to={`https://mail.google.com/mail/?view=cm&fs=1&to=${landlord.email}&su=Regarding ${listing.name}&body=${message}`}
+            className="bg-slate-900 text-white text-center p-3 uppercase rounded-lg hover:opacity-95"
           >
             Send Message
           </Link>
